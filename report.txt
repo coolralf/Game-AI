@@ -1,0 +1,16 @@
+--------------------------------------------------------------------------------
+Processing file 'dqn.py'
+ outputting to 'dqn_1.py'
+--------------------------------------------------------------------------------
+
+'dqn.py' Line 48
+--------------------------------------------------------------------------------
+
+Renamed keyword argument from 'reduction_indices' to 'axis'
+
+    Old:         self.q_train = tf.reduce_max(tf.multiply(self.train_net.y, self.actions), reduction_indices=1)
+                                                                                           ~~~~~~~~~~~~~~~~~~   
+    New:         self.q_train = tf.reduce_max(tf.multiply(self.train_net.y, self.actions), axis=1)
+                                                                                           ~~~~~   
+
+
